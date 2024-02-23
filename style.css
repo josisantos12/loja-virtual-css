@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  width: 100%;
+  
+}
+
+header{
+  align-items: center;
+  display: flex;
+  background-color: rgb(34, 12, 85);
+  justify-content: space-between;
+}
+
+.menu .submenu{
+  display: flex;
+  padding: 20px;
+  list-style: none;
+}
+.submenu li{
+  padding: 8px;
+}
+
+hr{
+  border: 1px solid black;
+  background-color: rgb(6, 2, 17);
+}
+
+.container{
+display: flex;
+padding: 20px;
+}
+
+.container .sobre-texto{
+  padding: 10px;
+}
+.sobre-texto h2{
+  color: chocolate;
+}
+.sobre-texto p{
+  color: brown;
+  margin-top: 20px;
+  font-size: 15px;
+  
+}
+
+.container-produtos{
+  padding: 20px;
+}
+.container-produtos h2{
+  color: brown;
+}
+
+.produto-section {
+  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .produto-item {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .produto-item img {
+    width: 100%;
+    height: auto;
+  }
+  .produto-item button{
+    font-size: 15px;
+    color: black;
+    background-color: rgb(70, 73, 209);
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+  }
+  .produto-item p{
+    font-size: 13px;
+
+  }
+ 
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .container {
+      width: 100%;
+    }
+    
+    .sobre-loja {
+      width: 50%;
+    }
+    
+    .sobre-texto {
+      width: 50%;
+    }
+    
+    .produto-item {
+      width: 45%;
+      margin: 1%;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .sobre-loja {
+      width: 100%;
+    }
+    
+    .sobre-texto {
+      width: 100%;
+    }
+    
+    .produto-item {
+      width: 100%;
+      margin: 1%;
+    }
+    
+    .produto-item img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .produto-item button {
+      font-size: 14px;
+    }
+    
+    .produto-item p {
+      font-size: 12px;
+    }
+  }
+  
